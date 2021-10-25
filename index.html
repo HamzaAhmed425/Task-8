@@ -9,32 +9,32 @@
 	
 	let today = new Date();
 
-	let christmasYear = today.getFullYear();
+	let August = today.getFullYear();
 
 	
 	if (today.getMonth() == 8 &&
 		today.getDate() > 14) {
 
 	
-	christmasYear = christmasYear + 1;
+	August = August + 1;
 	}
 
-	// Get the date of the next Christmas
-	let christmasDate =
-		new Date(christmasYear, 8, 14);
+	
+	let AugustDate =
+		new Date(August, 7, 14);
 
 	let dayMilliseconds =
 		1000 * 60 * 60 * 24;
 
 	
 	let remainingDays = Math.ceil(
-	(christmasDate.getTime() - today.getTime()) /
+	(AugustDate.getTime() - today.getTime()) /
 	(dayMilliseconds)
 	);
 
 	
 	document.write("There are " + remainingDays +
-				" days remaining until 14 august"
+				" days remaining until 14 august")
 </script>
 </body>
 </html>
